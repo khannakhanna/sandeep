@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Brand — One Page Site</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #1c1c1c;   /* primary text color */
+      --muted: #4a4a4a; /* secondary text */
+      --radius: 14px;   /* border-radius for cards */
+      --maxw: 960px;    /* max width for content */
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.6;
+
+      /* Background: subtle white overlay + 45° tricolor gradient */
+      background: 
+        /*linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),*/
+        linear-gradient(45deg, #ff9933, #ffffff 50%, #138808);
+
+      background-attachment: fixed; /* static background on scroll */
+      min-height: 100vh;
+    }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 0 60px;
+    }
+    .hero img {
+      height: 80px; width: auto; border-radius: 12px;
+    }
+    .hero h1 {
+      margin: 20px 0 12px;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 700;
+    }
+    .hero p {
+      color: var(--muted);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* Content Cards */
+    .card {
+      background: rgba(255, 255, 255, 0.918);
+      border-radius: var(--radius);
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      margin-bottom: 48px;
+    }
+    h2 { margin-top: 0; }
+
+    /* Links Section */
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .links a {
+      text-decoration: none;
+      display: block;
+      padding: 14px;
+      background: #f9f9f9;
+      border-radius: var(--radius);
+      border: 1px solid rgba(0,0,0,0.1);
+      text-align: center;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .links a:hover {
+      background: #fff;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 24px 0;
+      border-top: 1px dashed rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <img src="./sandeep-coin-logo.jpeg" alt="Your Brand Logo">
+      <h1><strong>Sabka Saath Sabka Vikas</strong></h1>
+      <p>Make India Strong</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h2>About Us</h2>
+      <p>We are launching India's own Crypto coin.</p>
+    </section>
+
+    <!-- LINKS -->
+    <section id="links" class="card">
+      <h2>Useful Links</h2>
+      <div class="links">
+        <a href="https://example.com" target="_blank">Main Website</a>
+        <a href="https://maps.google.com" target="_blank">Find Us</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="mailto:hello@example.com">Email Us</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      © <span id="y"></span> Sandeep Coin. All rights reserved. <br>
+      DISCLAIMER: Add your legal disclaimer text here.
+    </footer>
+  </main>
+
+  <script>
+    // auto year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
