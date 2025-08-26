@@ -1,22 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Brand — One Page Site</title>
+  <title>NFT50 MEMECoin - Disrupting the crypto space by riding the Bull</title>
 
-  <!-- Google Fonts -->
+  <!-- SEO -->
+  <meta name="description" content="NFT50 MEMECoin - Disrupting the crypto space by riding the Bull" />
+  <!-- <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPO/" /> -->
+  <meta name="theme-color" content="#138808" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="./sandeep-coin-logo.jpeg" />
+
+  <!-- Google Fonts performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 
   <style>
     :root {
-      --ink: #1c1c1c;   /* primary text color */
-      --muted: #4a4a4a; /* secondary text */
-      --radius: 14px;   /* border-radius for cards */
-      --maxw: 960px;    /* max width for content */
+      --ink: #1c1c1c;
+      /* primary text color */
+      --muted: #4a4a4a;
+      /* secondary text */
+      --radius: 14px;
+      /* border-radius for cards */
+      --maxw: 960px;
+      /* max width for content */
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -25,45 +46,86 @@
       line-height: 1.6;
 
       /* Background: subtle white overlay + 45° tricolor gradient */
-      background: 
+      background:
         /*linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),*/
-        linear-gradient(45deg, #138808,  #ffffff 50%,#ff9933);
+        linear-gradient(45deg, #138808, #ffffff 50%, #ff9933);
 
-      background-attachment: fixed; /* static background on scroll */
+      background-attachment: fixed;
+      /* static background on scroll */
       min-height: 100vh;
     }
 
-    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px;
+    }
 
     /* Hero Section */
     .hero {
       text-align: center;
       padding: 80px 0 60px;
     }
+
     .hero img {
-      height: 80px; width: auto; border-radius: 12px;
+      height: 80px;
+      width: auto;
+      border-radius: 12px;
     }
+
     .hero h1 {
       margin: 20px 0 12px;
       font-size: clamp(28px, 5vw, 44px);
       font-weight: 700;
     }
+
     .hero p {
       color: var(--muted);
       max-width: 720px;
       margin: 0 auto;
     }
 
+    /* Logo + name row */
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* center the row; use flex-start for left align */
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      /* stacks nicely on small screens */
+    }
+
+    .brand img {
+      height: 100px;
+      /* adjust to taste (e.g., 100px) */
+      width: auto;
+      border-radius: 12px;
+    }
+
+    .brand-name {
+      font-weight: 800;
+      font-size: clamp(22px, 4vw, 36px);
+      /* responsive text size */
+      letter-spacing: .5px;
+      color: var(--ink);
+      line-height: 1;
+    }
+
     /* Content Cards */
     .card {
       background: rgba(255, 255, 255, 0.918);
       border-radius: var(--radius);
-      border: 1px solid rgba(0,0,0,0.08);
+      border: 1px solid rgba(0, 0, 0, 0.08);
       padding: 24px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
       margin-bottom: 48px;
     }
-    h2 { margin-top: 0; }
+
+    h2 {
+      margin-top: 0;
+    }
 
     /* Links Section */
     .links {
@@ -72,21 +134,63 @@
       gap: 12px;
       margin-top: 12px;
     }
+
     .links a {
       text-decoration: none;
       display: block;
       padding: 14px;
       background: #f9f9f9;
       border-radius: var(--radius);
-      border: 1px solid rgba(0,0,0,0.1);
+      border: 1px solid rgba(0, 0, 0, 0.1);
       text-align: center;
       font-weight: 600;
       color: var(--ink);
     }
+
     .links a:hover {
       background: #fff;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     }
+
+    /* Contract button and formatting */
+    .contract-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border: 2px dashed #aaa;
+      border-radius: 10px;
+      /*background: #111; */
+      background: #fff;
+      color: #111;
+      font-family: monospace;
+      font-size: 14px;
+      overflow-x: auto;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .contract-box .label {
+      font-weight: bold;
+      margin-right: 6px;
+      color: #111;
+    }
+
+    .copy-btn {
+      margin-left: auto;
+      background: #222;
+      color: #fff;
+      border: 1px solid #555;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all .2s ease;
+    }
+
+    .copy-btn:hover {
+      background: #444;
+    }
+
 
     /* Footer */
     footer {
@@ -94,47 +198,231 @@
       font-size: 13px;
       color: var(--muted);
       padding: 24px 0;
-      border-top: 1px dashed rgba(0,0,0,0.2);
+      border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    }
+
+    /* Icon grid replacing .links */
+    .platforms {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 0;
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .platforms li a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      background: #f9f9f9;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--ink);
+      font-weight: 600;
+      transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+    }
+
+    .platforms li a:hover,
+    .platforms li a:focus-visible {
+      background: #fff;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, .06);
+      transform: translateY(-2px);
+    }
+
+    /* Circular icon holder */
+    .icon-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, .08);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .06);
+      flex: 0 0 auto;
+    }
+
+    /* Brand SVGs (from Simple Icons) */
+    .brand-icon {
+      width: 22px;
+      height: 22px;
+      display: block;
+    }
+
+    /* Bootstrap icon size inside the circle */
+    .icon-circle .bi {
+      font-size: 18px;
+    }
+
+    /* Label text */
+    .platforms .label {
+      line-height: 1.2;
     }
   </style>
 </head>
+
 <body>
   <main class="wrap">
     <!-- HERO -->
-    <section class="hero" id="top">
-      <img src="./sandeep-coin-logo.jpeg" alt="Your Brand Logo">
-      <h1><strong>Sabka Saath Sabka Vikas</strong></h1>
-      <p>Make India Strong</p>
+    <section class="hero" id="top" aria-labelledby="NFT50 (MEMECOIN)">
+      <div class="brand">
+        <img src="./sandeep-coin-logo.jpeg" alt="NFT50 (MEMECOIN) Logo">
+        <span class="brand-name">NFT50 (MEMECOIN)</span>
+      </div>
+
+      <h1 id="brand-title"><strong>Sabki Pragati Sabki Unnati - Make NFT50 Great</strong></h1>
+      <p>Disrupting the crypto space by riding the Bull.</p>
+    </section>
+
+    <!-- Contract Address -->
+    <section class="card">
+      <h2>Contract Address</h2>
+      <div class="contract-box">
+        <span class="label">Contract:</span>
+        <span id="contract-address">0xd7E6C43eBb9Ce73b892F86EdcCfe2271F0943841</span>
+        <button class="copy-btn" onclick="copyContract()">COPY</button>
+      </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="card">
       <h2>About Us</h2>
-      <p>We are launching India's own Crypto coin.</p>
+      <p>The intent of this Meme Coin is to track NIFTY 50 indices (NSE India) for entertainment purposes only.</p>
+      <p>Don't put all your eggs in one basket. Crypto is a new asset class with low correlation to traditional markets.
+      </p>
+      <p>The world is going digital—currencies, finance, ownership. Crypto is at the center of that shift.</p>
+      <p>Sabki Pragati Sabki Unnati - Make NFT50 Great</p>
     </section>
+
+    <!-- We are available -->
+    <section id="availability" class="card">
+      <h2>We are available on</h2>
+
+      <ul class="platforms">
+        <!-- Pinksale (brand SVG via Coinmarketcap Icons) -->
+        <li>
+          <a href="https://example.com" target="_blank" rel="noopener">
+            <span class="icon-circle">
+              <img class="brand-icon" src="https://s2.coinmarketcap.com/static/img/coins/200x200/12566.png"
+                alt="Pinksale Fairlaunch logo" />
+            </span>
+            <span class="label">Pinksale Fairlaunch</span>
+          </a>
+        </li>
+
+        <!-- PancakeSwap (brand SVG via Coinmarketcap Icons) -->
+        <li>
+          <a href="https://pancakeswap.finance" target="_blank" rel="noopener">
+            <span class="icon-circle">
+              <img class="brand-icon" src="https://s2.coinmarketcap.com/static/img/coins/200x200/7186.png"
+                alt="PancakeSwap logo">
+            </span>
+            <span class="label">PancakeSwap</span>
+          </a>
+        </li>
+
+        <!-- CoinMarketCap (brand SVG via Simple Icons) -->
+        <li>
+          <a href="https://coinmarketcap.com" target="_blank" rel="noopener">
+            <span class="icon-circle">
+              <img class="brand-icon" src="https://cdn.simpleicons.org/coinmarketcap/1468fe" alt="" aria-hidden="true">
+            </span>
+            <span class="label">CoinMarketCap</span>
+          </a>
+        </li>
+      </ul>
+
+      <p>More exchanges coming soon. Stay tuned for updates.</p>
+    </section>
+
+
+    <!-- NIFTY 50 — Live (TradingView) -->
+    <section id="nifty" class="card">
+      <h2>NIFTY 50 — Live</h2>
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NSE-NIFTY/?exchange=NSE"
+            rel="noopener nofollow" target="_blank"><span class="blue-text">NIFTY symbol info by TradingView</span></a>
+        </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+          async>
+            {
+              "symbol": "NSE:NIFTY",
+                "colorTheme": "light",
+                  "isTransparent": true,
+                    "locale": "en",
+                      "width": "100%"
+            }
+          </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </section>
+
 
     <!-- LINKS -->
     <section id="links" class="card">
-      <h2>Useful Links</h2>
+      <h2>Join the NFT50 Community</h2>
       <div class="links">
-        <a href="https://example.com" target="_blank">Main Website</a>
-        <a href="https://maps.google.com" target="_blank">Find Us</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="mailto:hello@example.com">Email Us</a>
+        <a href="https://example.com" target="_blank">Telegram - NFT50</a>
+        <a href="https://maps.google.com" target="_blank">X-Twitter - @nft50meme</a>
+        <a href="https://instagram.com" target="_blank">Instagram - nft50meme</a>
+        <!-- <a href="https://facebook.com" target="_blank">Facebook</a> -->
+        <!-- <a href="mailto:hello@example.com">Email Us</a> -->
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-      © <span id="y"></span> Sandeep Coin. All rights reserved. <br>
-      DISCLAIMER: Add your legal disclaimer text here.
+      © <span id="y"></span> NFT50. All rights reserved. <br>
+      DISCLAIMER: NFT50 Coin is a meme Coin created for entertainment purposes only and has no association with any
+      stocks, equities, securities, indices, companies, or other financial or business entities. Any resemblance or
+      association between NFT50 and the “Stock Market” is purely coincidental and intended for satirical or humorous
+      purposes. This website operates solely as a fan page dedicated to NFT50, with no affiliation to any official
+      organization or entity. Any documents linked for listing, exchange, or regulatory purposes are hosted here for
+      easy access and do not constitute an endorsement or affiliation with any of the listed or cited entities. NFT50
+      Coin is a meme Coin with no intrinsic value or expectation of financial return. By using this site, users
+      acknowledge that all interactions and interpretations are at their own risk, and the site host assumes no
+      liability for any user actions or assumptions based on the content presented. Users accept full responsibility for
+      any and all losses, damages, or liabilities arising from their use of the site, including but not limited to
+      financial losses, data loss, or any form of harm. Any links to third-party websites are provided for convenience,
+      and users access such external sites at their own risk, with no liability to the host for any consequences
+      resulting from third-party content or interactions. This site does not offer financial, legal, or professional
+      advice. All content is intended solely for entertainment and should not be relied upon for financial, investment,
+      or legal decisions. The site host makes no guarantees regarding the accuracy, completeness, or currency of the
+      information presented. All content is provided “as-is,” without warranties of any kind, either expressed or
+      implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or
+      non-infringement. To the fullest extent permitted by law, the site host shall not be liable for any direct,
+      indirect, incidental, consequential, or punitive damages arising from or related to use of this site. By using
+      this site, users agree to indemnify and hold the site host harmless from any claims, damages, liabilities, and
+      expenses arising from their use of the site or violation of these terms. The site host reserves the right to
+      modify this disclaimer at any time, and continued use of the site constitutes acceptance of any updated terms.©
+      2025 by NFT50. All rights reserved!.
     </footer>
   </main>
 
+  <!-- <script>
+    // auto year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script> -->
+
   <script>
+    // Copy Contract address function
+    function copyContract() {
+      const text = document.getElementById("contract-address").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.querySelector(".copy-btn");
+        btn.innerText = "COPIED!";
+        setTimeout(() => btn.innerText = "COPY", 1500);
+      });
+    }
     // auto year
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
