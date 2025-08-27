@@ -262,6 +262,28 @@
     .platforms .label {
       line-height: 1.2;
     }
+
+    .nifty-label {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.nifty-label a {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #138808;       /* green from tricolor */
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.nifty-label a:hover {
+  background: #0f6605;
+  transform: translateY(-2px);
+}
   </style>
 </head>
 
@@ -305,7 +327,7 @@
       <ul class="platforms">
         <!-- Pinksale (brand SVG via Coinmarketcap Icons) -->
         <li>
-          <a href="https://example.com" target="_blank" rel="noopener">
+          <a href="https://www.pinksale.finance/launchpad/bsc/0x0dfda11e0b574C478025b64ac30352bC4D2b166A" target="_blank" rel="noopener">
             <span class="icon-circle">
               <img class="brand-icon" src="https://s2.coinmarketcap.com/static/img/coins/200x200/12566.png"
                 alt="Pinksale Fairlaunch logo" />
@@ -316,7 +338,7 @@
 
         <!-- PancakeSwap (brand SVG via Coinmarketcap Icons) -->
         <li>
-          <a href="https://pancakeswap.finance" target="_blank" rel="noopener">
+          <a href="https://pancakeswap.finance/swap?chain=bsc&chainOut=bsc&inputCurrency=BNB&outputCurrency=0xd7E6C43eBb9Ce73b892F86EdcCfe2271F0943841&exactAmount=&exactField=INPUT" target="_blank" rel="noopener">
             <span class="icon-circle">
               <img class="brand-icon" src="https://s2.coinmarketcap.com/static/img/coins/200x200/7186.png"
                 alt="PancakeSwap logo">
@@ -325,7 +347,7 @@
           </a>
         </li>
 
-        <!-- CoinMarketCap (brand SVG via Simple Icons) -->
+        <!-- CoinMarketCap (brand SVG via Simple Icons)
         <li>
           <a href="https://coinmarketcap.com" target="_blank" rel="noopener">
             <span class="icon-circle">
@@ -333,44 +355,31 @@
             </span>
             <span class="label">CoinMarketCap</span>
           </a>
-        </li>
-      </ul>
+        </li>-->
+      </ul> 
 
       <p>More exchanges coming soon. Stay tuned for updates.</p>
     </section>
 
 
-    <!-- NIFTY 50 — Live (TradingView) -->
-    <section id="nifty" class="card">
-      <h2>NIFTY 50 — Live</h2>
-      <!-- TradingView Widget BEGIN -->
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NSE-NIFTY/?exchange=NSE"
-            rel="noopener nofollow" target="_blank"><span class="blue-text">NIFTY symbol info by TradingView</span></a>
-        </div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
-          async>
-            {
-              "symbol": "NSE:NIFTY",
-                "colorTheme": "light",
-                  "isTransparent": true,
-                    "locale": "en",
-                      "width": "100%"
-            }
-          </script>
-      </div>
-      <!-- TradingView Widget END -->
-    </section>
+    <!-- NIFTY 50 Label Card -->
+<section id="nifty" class="card">
+  <h2>Market Index</h2>
+  <div class="nifty-label">
+    <a href="https://www.nseindia.com/index-tracker/NIFTY%2050" target="_blank" rel="noopener">
+      NIFTY 50
+    </a>
+  </div>
+</section>
 
 
     <!-- LINKS -->
     <section id="links" class="card">
       <h2>Join the NFT50 Community</h2>
       <div class="links">
-        <a href="https://example.com" target="_blank">Telegram - NFT50</a>
-        <a href="https://maps.google.com" target="_blank">X-Twitter - @nft50meme</a>
-        <a href="https://instagram.com" target="_blank">Instagram - nft50meme</a>
+        <a href="https://t.me/NFT50" target="_blank">Telegram - NFT50</a>
+        <a href="https://x.com/nft50Meme" target="_blank">X-Twitter - @nft50meme</a>
+        <a href="https://www.instagram.com/nft50meme" target="_blank">Instagram - nft50meme</a>
         <!-- <a href="https://facebook.com" target="_blank">Facebook</a> -->
         <!-- <a href="mailto:hello@example.com">Email Us</a> -->
       </div>
