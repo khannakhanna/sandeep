@@ -97,6 +97,17 @@
       /* stacks nicely on small screens */
     }
 
+    .end-message h1 {
+      text-align: center;
+      justify-content: center;
+      /* center the row; use flex-start for left align */
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: var(--radius);
+    }
+
     .brand img {
       height: 100px;
       /* adjust to taste (e.g., 100px) */
@@ -284,6 +295,72 @@
   background: #0f6605;
   transform: translateY(-2px);
 }
+
+.highlights {
+  list-style: none;
+  padding: 10;
+  margin: 10;
+}
+
+/* How to Buy section */
+.howto h2{
+  text-align:center;
+  margin-bottom: 16px;
+}
+
+/* Grid of steps */
+.steps{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(1, minmax(0,1fr));
+}
+
+/* Card-like step */
+.step{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  text-align: left;
+}
+
+/* Icon circle (blue) */
+.step-icon i{
+  width: 56px; height: 56px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #e9f2ff;              /* light blue fill */
+  color: #1d4ed8;                    /* blue icon */
+  font-size: 28px;                   /* emoji size */
+  margin-bottom: 12px;
+}
+
+/* Titles & text */
+.step h3{
+  margin: 4px 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.step p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* Responsive: 2 columns on tablets, 4 on desktop */
+@media (min-width: 640px){
+  .steps{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (min-width: 1024px){
+  .steps{ grid-template-columns: repeat(4, minmax(0,1fr)); }
+}
+
+
   </style>
 </head>
 
@@ -297,8 +374,9 @@
       </div>
 
       <h1 id="brand-title"><strong>Sabki Pragati Sabki Unnati</strong></h1>
-      <h1 id="brand-title"><strong>Make NFT50 Great</strong></h1>
+      
       <p><b>Disrupting the crypto space by riding the Bull.</b></p>
+      <p><b>The meme coin that rides the bull and empowers the community.</b></p>
     </section>
 
     <!-- Contract Address -->
@@ -313,21 +391,85 @@
 
     <!-- ABOUT -->
     <section id="about" class="card">
-      <!-- <h2>About Us</h2> -->
-      <p>The intent of this Meme Coin is to track NIFTY 50 indices (NSE India) for entertainment purposes only.</p>
-      <p>Don't put all your eggs in one basket. Crypto is a new asset class with low correlation to traditional markets.
-      </p>
-      <p>The world is going digital—currencies, finance, ownership. Crypto is at the center of that shift.</p>
-      <p>Sabki Pragati Sabki Unnati - Make NFT50 Great</p>
-      <p>Creators / founders do not get special preference during the launch. As this is a Fairlaunch all the investors including creators / founders gets the coin at the same price as all the investors during the Launch. Price of the coin depends on the BNB collected by the end of the launch.</p>
-      <p>Total Supply:  1,000,000,000 NFT50 (100%)</p>
-        <p>Fair Launch:  500,000,000 NFT50 (50%)</p>
-<p>Liquidity Pool: 451,250,000 NFT50 (45.125%)</p>
-<p>Retained for promotional expenses:  48,750,000 NFT50 (4.875%)</p>
-<p>Along with Liquidity Pool NFT50 coins, all the launch proceeds will go into Liquidity pool (minus Launch platform fee).</p>
-<p>Once the launch is complete & successful, NFT50 will be auto listed on PanCakeSwap (link below) and will be freely tradable.</p>
-<p>Recommended Wallets:  Trust Wallet,  MetaMask, among others.</p>
+      <h2>Welcome to NFT50 Meme Coin</h2>
+      <div class="about-block">
+    <h3>Sabki Pragati, Sabki Unnati – Make NFT50 Great</h3>
+    <p>
+      NFT50 is a community-driven meme coin inspired by India’s NIFTY 50 index, created purely for entertainment and community engagement.
+    </p>
+    <p>
+      We believe in <b>fairness, fun, and financial inclusion</b>. No special privileges for founders, no hidden allocations—just a fair launch where everyone gets equal opportunity.
+    </p>
+  </div>
+<hr>
+
+  <div class="about-block">
+    <h3>Why NFT50?</h3>
+    <ul class="highlights">
+      <li>📈 <b>Inspired by NIFTY 50</b> – A playful meme coin concept linked to one of India’s most recognized indices</li>
+      <li>🔑 <b>Fair Launch, No Pre-Mines</b> – Founders and investors participate on equal terms.</li>
+      <li>💡 <b>Community First</b> – Price discovery is fully transparent, based on BNB raised during launch.</li>
+      <li>🔒 <b>Liquidity Secured</b> – All proceeds go directly into the liquidity pool (minus platform fees).</li>
+      <li>🌐 <b>Tradable on PancakeSwap</b> – NFT50 will be auto-listed after launch and instantly tradable.</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class="about-block">
+    <h3>Key Highlights</h3>
+    <ul class="highlights">
+      <li><b>🚀 Bullish Growth</b> – Tokenomics aligned for long-term community gains</li>
+      <li><b>🌍 Inclusive Vision</b> – “Sabki Pragati Sabki Unnati”: growth for everyone</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class="about-block">
+    <h3>Tokenomics</h3>
+    <ul>
+      <li><b>Total Supply</b>: 1,000,000,000 NFT50 (100%)</li>
+      <li><b>Fair Launch</b>: 500,000,000 NFT50 (50%)</li>
+      <li><b>Liquidity Pool</b>: 451,250,000 NFT50 (45.125%)</li>
+      <li><b>Promotional Reserve</b>: 48,750,000 NFT50 (4.875%)</li>
+    </ul>
+  </div>
     </section>
+
+    <!-- HOW TO BUY -->
+<section id="how-to-buy" class="card howto">
+  <h2>How to Buy NFT50</h2>
+
+  <ol class="steps">
+    <!-- Step 1 -->
+    <li class="step">
+      <div class="step-icon"><i class="bi bi-shield-check"></i></div>
+      <h3>1. Create a Wallet</h3>
+      <p>Download a trusted crypto wallet (e.g., <strong><a href="https://trustwallet.com/" target="_blank" rel="noopener">"Trust Wallet"</a></strong> or <strong><a href="https://metamask.io/" target="_blank" rel="noopener">MetaMask</a></strong>) to store your NFT50.</p>
+    </li>
+
+    <!-- Step 2 -->
+    <li class="step">
+      <div class="step-icon"><i class="bi bi-coin"></i></div>
+      <h3>2. Add BNB to Your Wallet</h3>
+      <p>Buy or transfer <strong>BNB</strong> (you can swap USDT → BNB inside most wallets). This funds your NFT50 purchase.</p>
+    </li>
+
+    <!-- Step 3 -->
+    <li class="step">
+      <div class="step-icon"><i class="bi bi-window-plus"></i></div>
+      <h3>3. Connect to Launch Platform</h3>
+      <p>Visit <strong><a href="https://www.pinksale.finance/launchpad/bsc/0x0dfda11e0b574C478025b64ac30352bC4D2b166A" target="_blank" rel="noopener">Pinksale</a></strong> (Fair Launch) or <strong><a href="https://pancakeswap.finance/swap?chain=bsc&chainOut=bsc&inputCurrency=BNB&outputCurrency=0xd7E6C43eBb9Ce73b892F86EdcCfe2271F0943841&exactAmount=&exactField=INPUT" target="_blank" rel="noopener">PancakeSwap</a></strong>, then connect your wallet securely.</p>
+    </li>
+
+    <!-- Step 4 -->
+    <li class="step">
+      <div class="step-icon"><i class="bi bi-balloon-fill"></i></div>
+      <h3>4. Buy NFT50 &amp; Celebrate</h3>
+      <p>Swap your BNB for <strong>NFT50</strong> tokens. That’s it — welcome to the community!</p>
+    </li>
+  </ol>
+</section>
+
 
     <!-- We are available -->
     <section id="availability" class="card">
@@ -393,6 +535,11 @@
         <!-- <a href="mailto:hello@example.com">Email Us</a> -->
       </div>
     </section>
+    
+    
+    <div class="end-message">
+    <h1 id="brand-title"><strong>Make NFT50 Great</strong></h1>
+    </div>
 
     <!-- FOOTER -->
     <footer>
